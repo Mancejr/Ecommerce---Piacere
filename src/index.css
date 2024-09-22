@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* * {
+  background-color: hsl(0, 3%, 85%);
+} */
+#root {
+  color: black;
+}
+main {
+  height: 100vh;
+}
+
+.header {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(153, 153, 153);
+  box-shadow: 0px 0px 20px 0rem hsla(0, 0%, 42%, 0.548);
+}
+
+.navbar {
+  padding: 0.5rem;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar__list li:hover {
+  color: rgb(105, 104, 104);
+  border-bottom: 1.7px solid;
+  transition: border-bottom 2s;
+}
+
+.header,
+.footer {
+  font-family: "Dancing Script", cursive;
+}
+
+.home {
+  margin-bottom: 2rem;
+}
+
+.products-container {
+  margin-top: 8rem;
+}
+
+.products {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.product {
+  /* border: 2px solid black; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.product-image {
+  border-radius: 2rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-title {
+  margin-top: 1rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.product-description {
+  font-family: "Dancing Script", cursive;
+}
+
+.add-to-cartBtn {
+  border: 1px solid black;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: hsl(39, 100%, 50%);
+  color: white;
+  font-family: "Roboto";
+  width: 50%;
+  border-radius: 2rem;
+}
+
+.add-to-cartBtn:hover {
+  background-color: hsl(39, 96%, 36%);
+}
+
+/* ==================== CART CSS ==========================  */
+
+.cart__cart-container {
+  margin: 2rem;
+}
+
+.cart__cart-item {
+  width: 40rem;
+  /* padding: 2rem; */
+  display: flex;
+  border: 1px solid black;
+  margin-top: 0.7rem;
+}
+
+.cart__cart-image {
+  width: 15%;
+  object-fit: cover;
+}
+
+.cart__cart-paragraphs {
+  display: flex;
+  flex-direction: column;
+}
+.cart__cart-paragraphs p {
+  margin-left: 2rem;
+}
+
+.cart__cart-quantity {
+  display: flex;
+}
+
+/* ======================== FOOTER CSS ===========================*/
+
+.footer {
+  margin-top: 10rem;
+  border-top: 2px solid rgb(153, 153, 153);
+  box-shadow: 0px 0px 20px 0rem hsla(0, 0%, 42%, 0.548);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.footer__description,
+.footer__quick-links,
+.footer__follow-us {
+  text-align: center;
+  align-items: center;
+  padding-top: 1.6rem;
+}
+
+.footer__description-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer__description-paragraph {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
